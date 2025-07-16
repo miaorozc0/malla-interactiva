@@ -1,1 +1,48 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#creditos {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ramo {
+  border: 2px solid #ccc;
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: not-allowed;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.ramo.unlocked {
+  cursor: pointer;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.ramo.approved {
+  background-color: #b9e3b1;
+  border-color: #57a257;
+  color: #255d25;
+  font-weight: bold;
+}
 
